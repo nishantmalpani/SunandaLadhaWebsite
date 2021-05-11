@@ -1,0 +1,254 @@
+#contactH1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.h3 {
+    font-weight: 400;
+    margin-bottom: 1em;
+    font-size: 2.2em;
+}
+
+#firstText {
+  color: #0275d8;
+}
+
+@media screen and (max-width: 980px) {
+  #openingImgText {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1050px) {
+  #openingImgText {
+    right: 8em;
+    font-size: 1.2em;
+    top: 8em;
+  position: absolute;
+  color: orchid;
+  }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1099px) {
+  #openingImgText {
+    right: 8em;
+    font-size: 1.2em;
+    top: 8em;
+  position: absolute;
+  color: orchid;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1250px) {
+  #openingImgText {
+    right: 10em;
+    font-size: 1.3em;
+    top: 8em;
+  position: absolute;
+  color: orchid;
+  }
+}
+
+@media screen and (min-width: 1251px) and (max-width: 1350px) {
+  #openingImgText {
+    right: 11em;
+    font-size: 1.4em;
+    top: 8em;
+  position: absolute;
+  color: orchid;
+  }
+}
+
+@media screen and (min-width: 1351px) and (max-width: 1520px) {
+  #openingImgText {
+    right: 12em;
+    font-size: 1.5em;
+    top: 8em;
+  position: absolute;
+  color: orchid;
+  }
+}
+
+@media screen and (min-width: 1520px) and (max-width: 1650px) {
+  #openingImgText {
+    right: 13em;
+    font-size: 1.5em;
+    top: 8em;
+  position: absolute;
+  color: orchid;
+  }
+}
+
+@media screen and (min-width: 1650px) and (max-width: 1850px) {
+  #openingImgText {
+    right: 15em;
+    font-size: 1.5em;
+    top: 8em;
+  position: absolute;
+  color: orchid;
+  }
+}
+
+@media screen and (min-width: 1851px) {
+  #openingImgText {
+    right: 20em;
+    font-size: 1.5em;
+    top: 8em;
+  position: absolute;
+  color: orchid;
+  }
+}
+
+#aboutH1 {
+  text-align: center;
+}
+
+#aboutH5 {
+  text-align: center;
+}
+
+#figcaption {
+    font-size: 2.5em;
+    color: black;
+}
+
+#openingDiv {
+  background-color: rgb(0, 56, 71);
+  height: 8em;
+  margin-bottom: 2.5em;
+  position: relative;
+}
+
+#openingImg {
+  border-bottom: 2px solid black;
+}
+
+#openingBtn {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgb(254, 102, 37);
+  border-color: rgb(254, 102, 37);
+}
+
+#openingBtn:hover {
+  background-color: blue;
+  border: blue;
+}
+
+.home-text {
+  font-size: 1.2em;
+}
+
+/* .centerImg {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centerImgContainer {
+  position: relative;
+} */
+
+.carousel-item {
+  height: 10em;
+}
+
+.testimonial-container { 
+    width: 50%;
+    /* height: auto; */
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    border: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+  #getStartedLink {
+    background-color: black;
+    color: white;
+    padding: 1em 1.5em;
+    -decoration: none;
+    margin-left: 1.5em;
+  }
+  
+  #getStartedLink:hover {
+    background-color: #555;
+  }
+  
+  #getStartedLink:active {
+    background-color: black;
+  }
+  
+  .coachingBtn {
+    display: block;
+    margin: auto;
+  }
+
+  .coachingBtn:hover {
+    background-color: rgb(254, 102, 37);
+    border: rgb(254, 102, 37);
+  }
+
+  .coachingBtn:active {
+    background-color: royalblue;
+  }
+
+  .test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .offer:hover {
+    background-color: rgb(224, 202, 112);
+    border: rgb(224, 202, 112);
+  }
+
+  .emailLink {
+    height: 4em;
+    width: 6em;
+    font-size: 1.5em;
+  }
+
+  .emailLink:hover {
+    background-color: rgb(224, 202, 112);
+    border: rgb(224, 202, 112);
+  }
+
+  #openingCoaching {
+    background-color: beige;
+  }
+
+  #groupCoachingEnd {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10%;
+    background-color: beige;
+  }
+
+  #clarityCall {
+    border-right: 1px solid gray;
+  }
+
+  #webinarRegistration {
+    background-color: blue;
+    color: white;
+    padding: 1em 1.5em;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #webinarRegistration:hover {
+    background-color: rgb(254, 102, 37);
+    border: rgb(254, 102, 37);
+  }
+
+  .card-body {
+    background-color: beige;
+  }

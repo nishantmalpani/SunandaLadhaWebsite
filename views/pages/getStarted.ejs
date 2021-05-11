@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/navbar.css">
+    <link rel="stylesheet" href="stylesheets/body.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+</head>
+
+<body>
+    <%- include('../partials/navbar') %>
+        <div class="container mb-5">
+            <h1 class="h1 text-center mb-3">Sign Up For Your Intro Session. Let's get started together.</h1>
+            <h4 class="h4 text-center mb-5">Reach out to me <a href="mailto: lsunanda95@gmail.com">through email</a> or
+                WhatsApp me at
+                111-111-111.</h4>
+            <div class="row mb-5">
+                <div class="col">
+                    <img src="/imgs/bhua_pic3.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <!-- MAKE CIRCULAR OPTIONS FOR PLEASING LOOK -->
+            <div class="row">
+                <% if (device==='phone' ) { %>
+                    <div class="col-lg-6 mb-5">
+                        <% } else { %>
+                            <div class="col-lg-6 mb-5" id="clarityCall">
+                                <% } %>
+                                    <h4 class="h4 text-center">1 on 1 Clarity Call</h4>
+                                    <p class="home-text">
+                                        Are you interested in signing up for personalized individual coaching? Well,
+                                        this is
+                                        the right
+                                        place to be. The clarity call is a completely free one hour call where I can get
+                                        to
+                                        know you better in order to make individual coaching better for you. We will
+                                        discuss
+                                        what
+                                        what your career goals are, and ways I can help you achieve them. Furthermore,
+                                        we
+                                        will discuss
+                                        the roadblocks preventing you from reaching your goal, and what we can do to
+                                        overcome them.
+                                        After the clarity call, you will make the decision on whether you want to
+                                        continue
+                                        with my
+                                        individual coaching program, and if so we can talk more about it inthe call.
+                                    </p>
+                                    <h5 class="h5">What you get out of a clarity call:</h5>
+                                    <ul class="home-text">
+                                        <li>A clear, actionable goal</li>
+                                        <li>Steps needed to achieve that goal</li>
+                                        <li>Your strengths will be clearly identified</li>
+                                        <li>You will feel much more confident about your career</li>
+                                    </ul>
+                                    <p class="home-text"><a href="mailto: lsunanda95@gmail.com">Email me
+                                            schedule your
+                                            clarity call</a></p>
+                            </div>
+                            <% if (device==='phone' ) { %>
+                                <hr>
+                                <% } %>
+
+
+                                    <div class="col-lg-6">
+                                        <h4 class="h4 text-center">Group Webinar</h4>
+                                        <p class="home-text">
+                                            Join my webinar to get a sample of what my six week group coaching program
+                                            is
+                                            like.
+                                            During this
+                                            webinar,
+                                            you will learn how to reinvent your true self, how to use your true
+                                            potential to
+                                            attract
+                                            your
+                                            dream role,
+                                            and how to confidently face any interview and pass. Each webinar is three
+                                            hours
+                                            long,
+                                            and is
+                                            over zoom.
+                                            It takes place bi-weekly and you only need to attend one to start my group
+                                            coaching
+                                            program.
+                                        </p>
+                                        <h5 class="h5">If you answer yes or can relate to any of these questions, you
+                                            should
+                                            sign up
+                                            for my
+                                            webinar</h5>
+                                        <ul class="home-text">
+                                            <li>Your talents are not appreciated and you are stuck in a dead-end job.
+                                            </li>
+                                            <li>You are stressed and need a better balance between work and life.</li>
+                                            <li>Your boss does not understand you and you need to figure out how to get
+                                                promoted.
+                                            </li>
+                                            <li>You are unemployed or feel like you may be unemployed soon.</li>
+                                            <li>You are thinking about starting your own business</li>
+                                            <li>You are starting out or need guidance in your career.</li>
+                                            <li>You want to change career paths, but don't know how.</li>
+                                        </ul>
+                                        <form action="/coaching/webinar-registration">
+                                            <button class="btn btn-primary coachingBtn offer">Sign up for a
+                                                Webinar</button>
+                                        </form>
+                                    </div>
+                    </div>
+            </div>
+
+            <%- include('../partials/footer') %>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+                    crossorigin="anonymous"></script>
+                <script src="/javascripts/test.js"></script>
+</body>
+
+</html>

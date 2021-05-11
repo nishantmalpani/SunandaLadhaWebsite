@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunanda Ladha Career Coaching</title>
+    <!-- MAKE PARTIAL FOR HEAD -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
+    <link rel="stylesheet" href="/stylesheets/body.css">
+    <link rel="stylesheet" href="/stylesheets/testimonials.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+</head>
+
+<body>
+    <%- include('../partials/navbar') %>
+        <div class="container">
+            <img src="/imgs/bhua_pic2.jpg" alt="" class="img-fluid" id="openingImg" width="1400px" height="1000px">
+            <% if (device !=='phone' ) { %>
+                <div id="openingImgText">"Guiding you to the career you truly love"</div>
+                <% } %>
+                    <div id="openingDiv">
+                        <div>
+                            <form action="/get-started">
+                                <button type="submit" class="btn btn-primary" type="button" id="openingBtn">Let me
+                                    help
+                                    you!</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row mb-5 mt-5">
+                        <div class="col-lg-6">
+                            <h3 class="h3" id="firstText">Let me help you grow in ways you have never imagined
+                                before.</h3>
+                            <p class="home-text">Working with a coach allows you to clarify, pursue, and achieve
+                                your goals.
+                                When working with me, we will construct a goal together. It may be to get into your
+                                dream
+                                company, or needing helpbecause you feel stuck in your current job. No matter what
+                                your goal
+                                is,
+                                I will be there step by step for the entire way.
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="https://2icta62atrka2saygi1aj2et-wpengine.netdna-ssl.com/wp-content/uploads/2014/12/Coaching-Sessions-1200x600.jpg"
+                                alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-md-5 mt-5">
+                        <div class="col-lg-6">
+                            <h3 class="h3">Why do you need a career coach?</h3>
+                            <ul>
+                                <li>Are you looking to change careers, but too hesitant to make the change?</li>
+                                <li>Do you feel a lack of passion when working?</li>
+                                <li>Do you just feel stuck in general?</li>
+                                <li>Do you need help making the transition between jobs?</li>
+                                <li>Do you need help preparing for an interview or building your resume?</li>
+                            </ul>
+
+                            <p class="home-text">
+                                These are common reasons why you need a career coach. If you answered yes to any of
+                                these
+                                questions,
+                                that is completely normal! A majority of people choose to not seek assistance
+                                because of
+                                pride.
+                                They
+                                think that they do not need the help, when truly they do. There is no shame in
+                                admitting
+                                that
+                                you
+                                need guidance!
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- CENTER IMAGE -->
+                            <img src="https://askacareerexpert.com/wp-content/uploads/2018/11/Career-Coach.png" alt=""
+                                class="img-fluid">
+                        </div>
+                    </div>
+                    <hr>
+                    <% if (device==='phone' ) { %>
+                        <div class="row mt-5 mb-5">
+                            <h2 class="h2 text-center mb-5">What I Offer</h2>
+                            <div class="row mb-5">
+                                <div class="col d-flex justify-content-center">
+                                    <form action="/get-started">
+                                        <button class="btn btn-primary btn-lg rounded-pill offer">Get
+                                            Started</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col d-flex justify-content-center">
+                                    <form action="/coaching/group-coaching">
+                                        <button class="btn btn-primary btn-lg rounded-pill offer">Group
+                                            Coaching</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-center">
+                                    <form action="/coaching/individual-coaching">
+                                        <button class="btn btn-primary btn-lg rounded-pill offer">Individual
+                                            Coaching</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <% } else { %>
+                            <div class="row mb-5 mt-3">
+                                <h2 class="h2 text-center mb-5">What I offer</h2>
+                                <div class="col-lg-3 offset-1">
+                                    <form action="/get-started">
+                                        <button class="btn btn-primary btn-lg rounded-pill offer">Get
+                                            Started</button>
+                                    </form>
+                                </div>
+                                <div class="col-lg-3 offset-1">
+                                    <form action="/coaching/group-coaching">
+                                        <button class="btn btn-primary btn-lg rounded-pill offer">Group
+                                            Coaching</button>
+                                    </form>
+                                </div>
+                                <div class="col-lg-3 offset-1">
+                                    <form action="/coaching/individual-coaching">
+                                        <button class="btn btn-primary btn-lg rounded-pill offer">Individual
+                                            Coaching</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <% } %>
+
+
+                                <hr>
+                                <div class="row mb-3 mt-5">
+                                    <div class="col-lg-6 mb-5">
+                                        <h3 class="h3 mb-0">Hi, I'm Sunanda Ladha.</h3>
+                                        <figcaption class="text-muted mb-5">Your career coach.</figcaption>
+                                        <p class="home-text">
+                                            Each day, for the past 22 years of my career, my passion for teaching
+                                            has only grown
+                                            day by
+                                            day. I genuiely love working with my clients, and that is what drives me
+                                            to keep
+                                            coaching.
+                                            Seeing
+                                            their successes after working with me lights me up with joy, and
+                                            inspires me to be
+                                            the best
+                                            coach
+                                            I can be.
+                                        </p>
+                                        <form action="/about">
+                                            <button class="btn btn-primary offer">Learn more about me!</button>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-6 centerImgContainer">
+                                        <img src="/imgs/bhua_pic3.jpg" alt="" class="img-fluid centerImg">
+                                    </div>
+                                </div>
+        </div>
+
+        <%- include('../partials/testimonials') %>
+            <%- include('../partials/footer') %>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+                    crossorigin="anonymous"></script>
+                <script src="/javascripts/test.js"></script>
+</body>
+
+</html>

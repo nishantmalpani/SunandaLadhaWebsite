@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Your Coach- Sunanda Ladha</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
+    <link rel="stylesheet" href="/stylesheets/body.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+</head>
+
+<body>
+    <%- include('../partials/navbar') %>
+
+        <!-- NEW IMAGE ON THIS PAGE -->
+        <div class="container">
+            <h1 class="h1" id="aboutH1">Hi, I'm Sunanda Ladha.</h1>
+            <h5 class="h5 mb-5" id="aboutH5">Your Career Coach</h5>
+            <div class="row mb-5">
+                <% if (device==='phone' ) { %>
+                    <div class="col-lg-6 mb-5">
+                        <img src="/imgs/bhua_pic5.PNG" alt="" class="img-fluid;" style="border: 2px solid black"
+                            width="100%">
+                    </div>
+                    <% } %>
+                        <div class="col-lg-6">
+                            <h4 class="h4 mb-3">A step by step guide for transformation.</h4>
+                            <p class="home-text">
+                                Hi, I am Sunanda and I have a serious passion for coaching. For the past 22 years, I
+                                have
+                                personally witnessed what it takes to get into prestigous companies and have a succesful
+                                career.
+                                <b>And I can confidently say that it all starts with you.</b> My passion for developing
+                                confidence
+                                and helping create clear goals will help motivate you towards succesful long-term
+                                results
+                            </p>
+                            <p class="home-text">Phrases by my clients that describe my coaching style:</p>
+                            <ul class="home-text mb-4">
+                                <li>
+                                    An excellent communicator
+                                </li>
+                                <li>
+                                    Someone who breaks things down step by step
+                                </li>
+                                <li>
+                                    A genuine and sincere coach
+                                </li>
+                            </ul>
+                            <form action="/get-started">
+                                <button class="btn btn-primary btn-lg offer mb-2 offset-3">Work With Me</button>
+                            </form>
+                        </div>
+                        <% if (device !=='phone' ) { %>
+                            <div class="col-lg-6">
+                                <img src="/imgs/bhua_pic5.PNG" alt="" class="img-fluid;" style="border: 2px solid black"
+                                    width="100%">
+                            </div>
+                            <% } %>
+            </div>
+            <!-- <div class="row mb-5">
+                <div class="col-lg-2 offset-5">
+                    <form action="/get-started">
+                        <button class="btn btn-primary btn-lg offer">Work With Me</button>
+                    </form>
+                </div>
+            </div> -->
+        </div>
+        <%- include('../partials/footer') %>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+                crossorigin="anonymous"></script>
+            <script src="/javascripts/test.js"></script>
+</body>
+
+</html>

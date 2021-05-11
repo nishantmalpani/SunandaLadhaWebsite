@@ -1,0 +1,26 @@
+.black-text {
+    color: black;
+    font-weight: 400;
+}
+
+#getStarted {
+    font-size: 1em;
+    border: 1px solid black;
+    font-weight: 500;
+    margin-left: 3em;
+    border-radius: 0%;
+    background-color: #0275d8;
+}
+
+@media screen and (max-width: 991px) {
+    #getStarted {
+        margin-left: 0;
+        border: none;
+        background-color: transparent;
+    }
+}
+
+.current {
+    font-weight: bold;
+    text-decoration: underline;
+}
